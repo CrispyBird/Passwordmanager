@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    gap: 20px;
+    background: linear-gradient(to bottom right, #0D92F4, #77CDFF);
+    position: relative;
+}
+
+.passManager {
+    height: 500px;
+    width: 400px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+}
+
+.passManager__header {
+    height: 20%;
+}
+
+.passManager__heading {
+    font-weight: 500;
+    font-size: 240%;
+}
+
+.passManager__section {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.passManager__div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    height: 35px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.passManager__btn {
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    background: #77CDFF;
+    width: 50%;
+    transition: all 0.3s;
+}
+
+.passManager__btn:hover {
+    cursor: pointer;
+    background: hsl(202, 100%, 63%);
+}
+
+ul {
+    list-style-type: none;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.toon__Btn,
+.verwijder__Btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.toon__Btn {
+    background: #77CDFF;
+}
+
+.toon__Btn:hover {
+    background: hsl(202, 100%, 63%);
+}
+
+.verwijder__Btn {
+    background: #FF204E;
+    color: white;
+}
+
+.verwijder__Btn:hover {
+    background: hsl(348, 100%, 36%);
+}
+
+.passList__div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.password {
+    margin: 0;
+    font-family: monospace;
+}
+
+article.passManager--list {
+    position: relative;
+}
+
+.toonAlles__btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #77CDFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.toonAlles__btn:hover {
+    background: #55aadd;
+}
+
+.fab {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 230%;
+    color: white;
+    border: none;
+    background: #FF204E;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+.fab:hover {
+    cursor: pointer;
+    background: hsl(348, 100%, 36%);
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+}

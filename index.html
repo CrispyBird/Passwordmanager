@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordManager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/aed3bb35e5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <article class="passManager">
+        <header class="passManager__header">
+            <h1 class="passManager__heading">SafetyLock</h1>
+        </header>
+        <section class="passManager__section">
+            <div class="passManager__div">
+                <label for="urlInput">URL / naam</label>
+                <input type="text" id="urlInput" placeholder="URL / naam" aria-label="URL of naam" />
+                <label for="passwordInput">Wachtwoord</label>
+                <input type="password" id="passwordInput" placeholder="Wachtwoord" aria-label="Wachtwoord" />
+            </div>
+            <button id="submit--btn" class="passManager__btn">Toevoegen</button>
+        </section>
+    </article>
+    <article class="passManager passManager--list">
+        <ul id="passwordList">
+            <li>
+                <h2 class="url">Spelletjes.nl</h2>
+                <div class="passList__div">
+                    <p class="password">M0oiWw</p>
+                    <button class="toon__Btn">Toon</button>
+                    <button class="verwijder__Btn">Verwijder</button>
+                </div>
+            </li>
+        </ul>
+        <button class="toonAlles__btn">Toon Alles</button>
+    </article>
+    <button id="js--fab" class="fab"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+</body>
+
+</html>
